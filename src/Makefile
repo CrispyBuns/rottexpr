@@ -7,7 +7,7 @@ SUPERROTT   ?= 0
 SITELICENSE ?= 0
 
 CPPFLAGS += -DSHAREWARE=$(SHAREWARE)
-CPPFLAGS += -DSUPERROTT=$(SUPERROTT)
+cCPPFLAGS += -DSUPERROTT=$(SUPERROTT)
 CPPFLAGS += -DSITELICENSE=$(SITELICENSE)
 
 ROTT ?= rott
@@ -16,7 +16,7 @@ ROTT ?= rott
 
 CC ?= gcc
 
-CFLAGS ?= -std=c17 -g -Og
+CFLAGS ?= -std=c17 -O2
 CFLAGS += -Wall -Wextra -Wshadow -Wpedantic
 CFLAGS += $(shell sdl2-config --cflags)
 CFLAGS += $(EXTRACFLAGS)
