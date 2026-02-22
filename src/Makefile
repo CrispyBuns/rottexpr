@@ -16,7 +16,7 @@ ROTT ?= rott
 
 CC ?= gcc
 
-CFLAGS ?= -std=c17 -O2
+CFLAGS ?= -std=c17 -O3
 CFLAGS += -Wall -Wextra -Wshadow -Wpedantic
 CFLAGS += $(shell sdl2-config --cflags)
 CFLAGS += $(EXTRACFLAGS)
